@@ -35,13 +35,13 @@ if (isset($_POST["set"])) {
       setLED($red, $green, $blue);
    } 
 }
-elseif(isset($_GET["r"]) && ctype_digit($_GET["r"]) &&
-       isset($_GET["g"]) && ctype_digit($_GET["g"]) &&
-       isset($_GET["b"]) && ctype_digit($_GET["b"]))
+elseif(isset($_REQUEST["r"]) && ctype_digit($_REQUEST["r"]) &&
+       isset($_REQUEST["g"]) && ctype_digit($_REQUEST["g"]) &&
+       isset($_REQUEST["b"]) && ctype_digit($_REQUEST["b"]))
 {
-    $red = $_GET["r"];
-    $green = $_GET["g"];
-    $blue = $_GET["b"];
+    $red   = $_REQUEST["r"];
+    $green = $_REQUEST["g"];
+    $blue  = $_REQUEST["b"];
 
     setLED($red, $green, $blue); 
 }
