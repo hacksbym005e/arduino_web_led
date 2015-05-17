@@ -1,0 +1,1 @@
+I've include source code for the iOS app and the php test page. The actual arduino code isn't mine to distribute, but can be found in chapter 10 of the book "Beginning Arduino". It's a simple example of writing analogue values out based on parsed serial input, so examples should be easy enough to find.
